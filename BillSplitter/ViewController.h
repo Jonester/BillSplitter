@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BillDelegate <NSObject>
+
+-(NSString *)calculateSplitAmount:(NSString *)bill numberPeople:(NSString *)people taxPercentage:(NSString *)tax;
+
+@end
+
 @interface ViewController : UIViewController
 
 

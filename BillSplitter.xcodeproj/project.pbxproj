@@ -13,6 +13,7 @@
 		3C57AEFD1E359090003043B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C57AEFB1E359090003043B1 /* Main.storyboard */; };
 		3C57AEFF1E359090003043B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C57AEFE1E359090003043B1 /* Assets.xcassets */; };
 		3C57AF021E359090003043B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C57AF001E359090003043B1 /* LaunchScreen.storyboard */; };
+		3C57AF0B1E35936C003043B1 /* BillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C57AF0A1E35936C003043B1 /* BillModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		3C57AEFE1E359090003043B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C57AF011E359090003043B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C57AF031E359090003043B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C57AF091E35936C003043B1 /* BillModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillModel.h; sourceTree = "<group>"; };
+		3C57AF0A1E35936C003043B1 /* BillModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				3C57AEF61E359090003043B1 /* AppDelegate.m */,
 				3C57AEF81E359090003043B1 /* ViewController.h */,
 				3C57AEF91E359090003043B1 /* ViewController.m */,
+				3C57AF091E35936C003043B1 /* BillModel.h */,
+				3C57AF0A1E35936C003043B1 /* BillModel.m */,
 				3C57AEFB1E359090003043B1 /* Main.storyboard */,
 				3C57AEFE1E359090003043B1 /* Assets.xcassets */,
 				3C57AF001E359090003043B1 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			files = (
 				3C57AEFA1E359090003043B1 /* ViewController.m in Sources */,
 				3C57AEF71E359090003043B1 /* AppDelegate.m in Sources */,
+				3C57AF0B1E35936C003043B1 /* BillModel.m in Sources */,
 				3C57AEF41E359090003043B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
