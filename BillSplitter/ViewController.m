@@ -32,6 +32,7 @@
     self.billModelDelegate = [BillModelDelegate new];
     self.billModel = [BillModel new];
     self.billModelDelegate.billDelegate = self.billModel;
+    self.billAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
     
     _originalConstraint = self.bottomConstraint.constant;
     

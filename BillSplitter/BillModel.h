@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ViewController.h"
+#import "BillModelDelegate.h"
 
 @interface BillModel : NSObject <BillDelegate>
 
