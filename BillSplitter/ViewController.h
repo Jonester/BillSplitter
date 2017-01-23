@@ -7,16 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@protocol BillDelegate <NSObject>
-
--(NSString *)calculateSplitAmount:(NSString *)bill numberPeople:(NSString *)people taxPercentage:(NSString *)tax;
-
-@end
+#import "BillModelDelegate.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
-@property (weak, nonatomic) id<BillDelegate> billDelegate;
 
 @end
 

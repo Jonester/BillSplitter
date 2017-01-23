@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "BillModel.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *taxPercentageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberOfPeopleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
@@ -17,20 +18,31 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 @property (assign, nonatomic, readonly) CGFloat originalConstraint;
 
+@property (strong, nonatomic) BillModelDelegate *billModelDelegate;
+@property (strong, nonatomic) BillModel *billModel;
+
+
 @end
 
 @implementation ViewController
-@synthesize billDelegate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.billModelDelegate = [BillModelDelegate new];
+    self.billModel = [BillModel new];
+    self.billModelDelegate.billDelegate = self.billModel;
+    
     _originalConstraint = self.bottomConstraint.constant;
     
     NSNotificationCenter *nsNotificationCenter = [NSNotificationCenter defaultCenter];
-    [nsNotificationCenter addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    [nsNotificationCenter addObserver:self
+                             selector:@selector(keyboardDidShow:)
+                                 name:UIKeyboardWillChangeFrameNotification
+                               object:nil];
     
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(keyboardDidHide:)];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                                action:@selector(keyboardDidHide:)];
     [self.view addGestureRecognizer:tapGesture];
     
 }
@@ -56,10 +68,9 @@
 }
 
 -(void)displaySplitAmount {
-    self.splitAmountLabel.text = [self.billDelegate calculateSplitAmount:self.billAmountTextField.text
-                                                        numberPeople:self.numberOfPeopleLabel.text
-                                                       taxPercentage:self.taxPercentageLabel.text];
-    
+    self.splitAmountLabel.text = [self.billModelDelegate.billDelegate calculateSplitAmount:self.billAmountTextField.text
+                                                                 numberPeople:self.numberOfPeopleLabel.text
+                                                                taxPercentage:self.taxPercentageLabel.text];
     
 }
 

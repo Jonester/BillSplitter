@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C110E5F1E35CD8B0096A894 /* BillModelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C110E5E1E35CD8B0096A894 /* BillModelDelegate.m */; };
 		3C57AEF41E359090003043B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C57AEF31E359090003043B1 /* main.m */; };
 		3C57AEF71E359090003043B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C57AEF61E359090003043B1 /* AppDelegate.m */; };
 		3C57AEFA1E359090003043B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C57AEF91E359090003043B1 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C110E5D1E35CD8B0096A894 /* BillModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillModelDelegate.h; sourceTree = "<group>"; };
+		3C110E5E1E35CD8B0096A894 /* BillModelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillModelDelegate.m; sourceTree = "<group>"; };
 		3C57AEEF1E359090003043B1 /* BillSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C57AEF31E359090003043B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C57AEF51E359090003043B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 				3C57AEF61E359090003043B1 /* AppDelegate.m */,
 				3C57AEF81E359090003043B1 /* ViewController.h */,
 				3C57AEF91E359090003043B1 /* ViewController.m */,
+				3C110E5D1E35CD8B0096A894 /* BillModelDelegate.h */,
+				3C110E5E1E35CD8B0096A894 /* BillModelDelegate.m */,
 				3C57AF091E35936C003043B1 /* BillModel.h */,
 				3C57AF0A1E35936C003043B1 /* BillModel.m */,
 				3C57AEFB1E359090003043B1 /* Main.storyboard */,
@@ -159,6 +164,7 @@
 				3C57AEF71E359090003043B1 /* AppDelegate.m in Sources */,
 				3C57AF0B1E35936C003043B1 /* BillModel.m in Sources */,
 				3C57AEF41E359090003043B1 /* main.m in Sources */,
+				3C110E5F1E35CD8B0096A894 /* BillModelDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 				3C57AF081E359090003043B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
