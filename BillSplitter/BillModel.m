@@ -26,12 +26,18 @@
 }
 
 -(NSString *)calculateSplitAmount:(NSString *)bill numberPeople:(NSString *)people taxPercentage:(NSString *)tax{
-    NSNumberFormatter *currencyFormat = [NSNumberFormatter new];
-    [currencyFormat setNumberStyle:NSNumberFormatterCurrencyStyle];
     
-    self.splitAmount = @(([bill integerValue] * ([tax integerValue]/100) + 1) / [people integerValue]);
+//    ViewController *viewController = [ViewController new];
+//    viewController.billDelegate = self;
     
-    return [currencyFormat stringFromNumber:self.splitAmount];
+    if([bill integerValue]) {
+        NSNumberFormatter *currencyFormat = [NSNumberFormatter new];
+        [currencyFormat setNumberStyle:NSNumberFormatterCurrencyStyle];
+        self.splitAmount = @(([bill integerValue] * ([tax integerValue]/100) + 1) / [people integerValue]);
+        return [currencyFormat stringFromNumber:self.splitAmount];
+    } else {
+        return nil;
+    }
 }
 
 @end

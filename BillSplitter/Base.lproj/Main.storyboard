@@ -101,6 +101,7 @@
                     </view>
                     <connections>
                         <outlet property="billAmountTextField" destination="y7b-gQ-RfQ" id="awg-tx-6cp"/>
+                        <outlet property="bottomConstraint" destination="fHx-oo-GHi" id="Wxk-XC-8VA"/>
                         <outlet property="numberOfPeopleLabel" destination="xWR-st-fQH" id="2Ik-Dh-aX7"/>
                         <outlet property="splitAmountLabel" destination="lZM-IT-0dx" id="wtw-Ht-uIe"/>
                         <outlet property="taxPercentageLabel" destination="evx-MT-5Cp" id="YrX-l6-FYQ"/>

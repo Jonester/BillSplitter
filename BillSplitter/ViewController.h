@@ -14,8 +14,9 @@
 
 @end
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) id<BillDelegate> billDelegate;
 
 @end
 
